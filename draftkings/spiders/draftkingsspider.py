@@ -73,7 +73,7 @@ class DraftKingsSpider(Spider):
         #     self.end_date = datetime.datetime.strptime(lines[1].strip(), '%m-%d-%Y').date()
         self.start_date = datetime.datetime.strptime("9-9-2022", '%m-%d-%Y').date()
         self.end_date = datetime.datetime.strptime('9-13-2022', '%m-%d-%Y').date()
-
+        print(response.url)
         teams_links = response.css(
             ".parlay-card-10-a .sportsbook-table .sportsbook-table__body .event-cell-link::attr(href)").extract()
         teams_links = list(dict.fromkeys(teams_links))
