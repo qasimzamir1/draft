@@ -66,11 +66,13 @@ class DraftKingsSpider(Spider):
 
     def parse(self, response):
 
-        with open('date.txt') as f:
-            lines = f.readlines()
-        if len(lines) == 2:
-            self.start_date = datetime.datetime.strptime(lines[0].strip(), '%m-%d-%Y').date()
-            self.end_date = datetime.datetime.strptime(lines[1].strip(), '%m-%d-%Y').date()
+        # with open('date.txt') as f:
+        #     lines = f.readlines()
+        # if len(lines) == 2:
+        #     self.start_date = datetime.datetime.strptime(lines[0].strip(), '%m-%d-%Y').date()
+        #     self.end_date = datetime.datetime.strptime(lines[1].strip(), '%m-%d-%Y').date()
+        self.start_date = datetime.datetime.strptime("9-9-2022", '%m-%d-%Y').date()
+        self.end_date = datetime.datetime.strptime('9-12-2022', '%m-%d-%Y').date()
 
         teams_links = response.css(
             ".parlay-card-10-a .sportsbook-table .sportsbook-table__body .event-cell-link::attr(href)").extract()
