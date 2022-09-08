@@ -35,7 +35,7 @@ class DraftKingsSpider(Spider):
 
         'USER_AGENT': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                       "Chrome/98.0.4758.102 Safari/537.36",
-        'CRAWLERA_APIKEY': '15cf7b06d9eb49cd971fadeba28db14a',
+        'CRAWLERA_APIKEY': '5871ec424f0a479ab721b3a757703580',
         'CONCURRENT_REQUESTS': 32,
         # "DOWNLOAD_DELAY": 3,
         'DOWNLOADER_MIDDLEWARES': {
