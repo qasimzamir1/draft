@@ -14,7 +14,7 @@ class DraftKingsSpider(Spider):
     ]
     custom_settings = {
         # "COOKIES_ENABLED": True,
-        'CRAWLERA_ENABLED': True,
+        # 'CRAWLERA_ENABLED': True,
         'FEED_EXPORT_FIELDS': [
             'Team',
             'date_time',
